@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+.chat-app {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.screen.active {
+  display: flex;
+}
+.screen.join-screen {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.screen.join-screen .form {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.screen.join-screen .form h2 {
+  border-bottom: 0.4rem solid #525050;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 4px;
+  color: #10110f;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.screen.join-screen .form .form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.screen.join-screen .form .form-input input {
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #525050;
+  padding: 1rem;
+}
+.screen.join-screen .form .form-input button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 4rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #10110f;
+  color: #ffffff;
+}
+.screen.chat-screen {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem;
+}
+.screen.chat-screen .chat {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0efef;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.screen.chat-screen .chat .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #10110f;
+  color: #ffffff;
+  padding: 1rem;
+}
+.screen.chat-screen .chat .header h1 {
+  font-size: 2rem;
+}
+.screen.chat-screen .chat .header button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.screen.chat-screen .chat .body {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+.screen.chat-screen .chat .body::-webkit-scrollbar {
+  width: 12px;
+}
+.screen.chat-screen .chat .body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+.screen.chat-screen .chat .body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.screen.chat-screen .chat .body .message-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.screen.chat-screen .chat .body .message-container.update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.screen.chat-screen .chat .body .message-container.you {
+  justify-content: flex-end;
+}
+.screen.chat-screen .chat .body .message-container .message-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 0;
+  max-width: 40rem;
+}
+.screen.chat-screen .chat .body .message-container .message-item strong {
+  font-size: 1.2rem;
+  color: #525050;
+}
+.screen.chat-screen .chat .body .message-container .message-item.you {
+  border-radius: 1rem 1rem 0 1rem;
+}
+.screen.chat-screen .chat .footer {
+  padding: 0.5rem;
+}
+.screen.chat-screen .chat .footer .form-input {
+  overflow: hidden;
+  display: flex;
+  border-radius: 0.5rem;
+}
+.screen.chat-screen .chat .footer .form-input input {
+  height: 4rem;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.screen.chat-screen .chat .footer .form-input button {
+  border: none;
+  outline: none;
+  background-color: #10110f;
+  color: #ffffff;
+  padding: 0 2rem;
+}/*# sourceMappingURL=main.css.map */
