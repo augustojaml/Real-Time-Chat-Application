@@ -9,6 +9,16 @@ Este é um aplicativo simples de chat em tempo real construído com Node.js, Exp
   - Enviar e receber mensagens em tempo real.
   - Notificações de novos usuários entrando e saindo do chat.
 
+## Images
+
+### SignIn
+
+![sign-in](signin.png)
+
+### Chat
+
+![chat](chat.png)
+
 ## Tecnologias Utilizadas
 
 - **Backend**:
@@ -49,7 +59,7 @@ root
 1. Clone o repositório para o seu ambiente local:
 
 ```sh
-git clone https://github.com/usuario/repo.git
+git clone https://github.com/augustojaml/Real-Time-Chat-Application.git
 ```
 
 2. Navegue até o diretório do projeto:
