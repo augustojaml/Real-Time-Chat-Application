@@ -71,7 +71,7 @@ cd repo
 3. Instale as dependências:
 
 ```sh
-cd repo
+npm install
 ```
 
 4. Inicie o servidor:
